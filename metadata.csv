@@ -1,0 +1,44 @@
+Declare,metatab-latest
+Title,MGRS/UTM Grid
+Description,Military Grid Reference System grid polygons
+Identifier,13409abe-d804-4e2d-aa6c-2fa0f5c96093
+Name,civicknowledge.com-mgrs-1.1.1
+Dataset,mgrs
+Origin,civicknowledge.com
+Time,
+Space,
+Grain,
+Variant,
+Version,1.1.1
+Version.Major,1
+Version.Minor,1
+Version.Patch,1
+Created,2021-02-09T18:57:59
+Modified,2021-02-09T19:28:13
+Giturl,https://github.com/CivicKnowledge/radius-search.git
+""
+Section,Contacts,Email,Organization,Url
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+""
+Section,Documentation,Title,Description,
+Documentation,file:README.md,README,,
+""
+Section,References,Name,Description,
+Reference,data/utm-grid.csv,utm_grid_source,,
+Reference,metapack+http://library.metatab.org/civicknowledge.com-geohash-us.csv,geohash_pkg,,
+Reference,censusgeo://2019/5/US/state,us_states,,
+""
+Section,Resources,Name,Description,
+Datafile,notebooks/Extract.ipynb#s,utm_grid,"UTM Grid polygons, with links to US states",
+""
+Section,Schema,DataType,AltName,Description,Has_Codes
+Table,utm_grid,,,,
+Table.Column,geometry,string,,,
+Table.Column,zone,integer,,,
+Table.Column,row,string,,,
+Table.Column,west_value,string,,,
+Table.Column,cm_value,string,,,
+Table.Column,east_value,string,,,
+Table.Column,zone_r,string,,,
+Table.Column,us_state,integer,,,
+Table.Column,cus_state,integer,,,
